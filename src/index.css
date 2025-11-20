@@ -1,0 +1,36 @@
+@import "tailwindcss";
+/* Keyframes for orbiting animation */
+.orbit {
+  animation: orbit 20s linear infinite;
+}
+
+.orbit-delay-5 {
+  animation: orbit 20s linear infinite;
+  animation-delay: -5s;
+}
+
+.orbit-delay-10 {
+  animation: orbit 20s linear infinite;
+  animation-delay: -10s;
+}
+
+.orbit-delay-15 {
+  animation: orbit 20s linear infinite;
+  animation-delay: -15s;
+}
+.orbit-delay-20 {
+  animation: orbit 20s linear infinite;
+  animation-delay: -20s;
+}
+
+
+@keyframes orbit {
+  0% {
+    transform: rotate(0deg) translateX(150px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(150px) rotate(-360deg);
+  }
+}
+
+
